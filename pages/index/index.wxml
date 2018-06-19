@@ -12,3 +12,9 @@
 <view>{{a + b}} + {{ c }} + d</view>
 <view>{{var3 + ', hello'}}</view>
 <view>{{[1, 2, 3]}}</view>
+
+<!-- if else -->
+<view wx:if="{{var1 === null}}">var1 是 null</view>
+<view wx:else>var1 不是 null</view>
+
+
