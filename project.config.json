@@ -12,8 +12,9 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.0.4",
-	"appid": "touristappid",
+	"appid": "wx61b24d2742fce374",
 	"projectname": "wechat-demo1",
+	"isGameTourist": false,
 	"condition": {
 		"search": {
 			"current": -1,

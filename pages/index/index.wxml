@@ -1,1 +1,12 @@
-<text>Hello World !</text>
+<!--pages/index/index.wxml-->
+<text>当前时间： {{time}}</text>
+
+<view>{{W}}</view>
+<view>{{w}}</view>
+
+<view>var1: {{var1}}</view>
+<view>var2: {{var2}}</view>
+<view>var3: {{var3}}</view>
+<view>var4: {{var4}}</view>
+
+
