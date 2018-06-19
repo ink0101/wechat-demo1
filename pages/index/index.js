@@ -30,12 +30,16 @@ Page({
       {id: 1, unique: 'unique_1' },
       {id: 0, unique: 'unique_0' }
     ],
-    array3: [1, 2, 3, 4]
+    array3: [1, 2, 3, 4],
+    item: {
+      index: 0,
+      msg: 'this is a template',
+      time: '2016-06-18'
+    }
   },
 
   switch: function(e) {
     const length = this.data.array2.length;
-    // console.log(length, this);
     for (let i = 0; i < length; ++i) {
       const x = Math.floor(Math.random() * length)
       const y = Math.floor(Math.random() * length)

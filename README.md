@@ -1,4 +1,5 @@
-## 微信小程序demo
+
+[toc]
 
 ### WXML 模板
 
@@ -88,7 +89,53 @@ wx:else
 	* 字符串
 	* 保留关键字this代表在循环中的item本身，这种表示需要item本身是一个唯一的字符串或者数字
 	
-	当数据改变触发渲染层重新渲染时，会校正带有key的组件，框架会
+	``` js
+	<!--unique 为数组项一个字段-->
+	<switch wx:for="{{array2}}" wx:key="unique"> {{item.id}} </switch>
+	<!--数组项为互不相等的数字-->
+	<switch wx:for="{{array3}}" wx:key="*this"> {{item}} </switch>
+	```
+	
+	当数据改变触发渲染层重新渲染时，会校正带有key的组件，框架会确保他们被重新排序，而不是重新创建，以确保使组件保持自身状态，并且提高列表渲染时的效率。
+	
+#### 模板
+
+* 在模板中定义代码片段，然后再不同的地方调用。
+* 模板的名字使用 name 属性定义。
+* 在 `<template><template/>` 中定义代码片段。
+* 使用 is 决定使用哪个模板。
+* 使用 data 传入数据。
+
+	``` js
+	<!--
+	{
+	  index: 0,
+	  msg: 'this is a template',
+	  time: '2016-06-18'
+	}
+	-->
+	
+	<template name="msgItem">
+	  <view>
+	    <text> {{index}}: {{msg}} </text>
+	    <text> Time: {{time}} </text>
+	  </view>
+	</template>
+	
+	<template is="msgItem" data="{{...item}}"/>
+	
+	<!-- 输出
+	0: this is a template Time: 2016-06-18
+	-->
+	```
+
+#### 引用
+
+#### 共同属性
+
+### WXSS样式
+	
+	
 
 
 

@@ -31,5 +31,14 @@
 <button bindtap='switch'> Switch </button>
 <button bindtap='addToFront'> Add to the front </button>
 
-<switch wx:for="{{array3}}" wx:key="this"> {{item}} </switch>
+<switch wx:for="{{array3}}" wx:key="*this"> {{item}} </switch>
 <button bindtap='addNumberToFront'> Add to the front </button>
+
+<template name="msgItem">
+  <view>
+    <text>{{index}}: {{msg}}</text>
+    <text>Time: {{time}}</text>
+  </view>
+</template>
+
+ <template is="msgItem" data="{{...item}}" /> 
