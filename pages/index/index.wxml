@@ -9,4 +9,6 @@
 <view>var3: {{var3}}</view>
 <view>var4: {{var4}}</view>
 
-
+<view>{{a + b}} + {{ c }} + d</view>
+<view>{{var3 + ', hello'}}</view>
+<view>{{[1, 2, 3]}}</view>

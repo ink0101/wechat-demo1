@@ -10,7 +10,10 @@ Page({
     W: 'W',
     var1: null,
     var2: undefined,
-    var3: 'var3'
+    var3: 'var3',
+    a: 1,
+    b: 2,
+    c: 3
   },
 
   /**
