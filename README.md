@@ -44,7 +44,7 @@
 #### 条件逻辑
 使用控制属性, 如wx:if，判断标签是否需要渲染。
 
-``` 
+``` js
 <!--if-->
 wx:if="{{condition}}"
 <!--else if-->
@@ -54,6 +54,41 @@ wx:else
 ```
 
 #### 列表渲染
+控制属性：wx:for="{{Array}}"
+
+* 默认下表为index，默认列表项为item。
+
+	``` js
+	<view wx:for="{{array1}}" wx:key="{{index}}">
+	  {{index}}: {{item.name}}
+	</view>
+	
+	<!--脚本-->
+	Page({
+	  data: {
+	    array1: [
+	      {
+	        name: 'foo'
+	      },
+	      {
+	        name: 'bar'
+	      }
+	    ]
+	  },
+	}
+	```
+* 可以使用wx:for-index, wx:for-item 指定数组的下标、数组项名字
+
+	``` js
+	<view wx:for="{{array1}}" wx:key="{{index}}" wx:for-index="idx" wx:for-item="child">
+	  {{idx}}: {{child.name}}
+	</view>
+	```
+* wx:key
+	* 字符串
+	* 保留关键字this代表在循环中的item本身，这种表示需要item本身是一个唯一的字符串或者数字
+	
+	当数据改变触发渲染层重新渲染时，会校正带有key的组件，框架会
 
 
 

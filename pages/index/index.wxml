@@ -17,4 +17,19 @@
 <view wx:if="{{var1 === null}}">var1 是 null</view>
 <view wx:else>var1 不是 null</view>
 
+<!-- 列表渲染 -->
+<view wx:for="{{array1}}" wx:key="{{index}}">
+  {{index}}: {{item.name}}
+</view>
 
+<view wx:for="{{array1}}" wx:key="{{index}}" wx:for-index="idx" wx:for-item="child">
+  {{idx}}: {{child.name}}
+</view>
+
+<!-- wx:key -->
+<switch wx:for="{{array2}}" wx:key="unique"> {{item.id}} </switch>
+<button bindtap='switch'> Switch </button>
+<button bindtap='addToFront'> Add to the front </button>
+
+<switch wx:for="{{array3}}" wx:key="this"> {{item}} </switch>
+<button bindtap='addNumberToFront'> Add to the front </button>
