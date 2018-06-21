@@ -1,3 +1,13 @@
+console.log('index.js')
+
+var global = getApp();
+
+console.log(global);
+
+global.globalNumber ++;
+
+console.log(global.globalNumber);
+
 // pages/index/index.js
 Page({
 
