@@ -42,3 +42,10 @@
 </template>
 
  <template is="msgItem" data="{{...item}}" /> 
+
+ <view bind:tap="handleTap4" capture-bind:tap="handleTap1">
+  outter view
+  <view bind:tap="handleTap3" capture-catch:tap="handleTap2">
+    inner view
+  </view>
+ </view>

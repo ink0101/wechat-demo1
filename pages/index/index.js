@@ -78,6 +78,22 @@ Page({
     });
   },
 
+  handleTap1: function(e) {
+    console.log('handleTap1');
+  },
+
+  handleTap2: function (e) {
+    console.log('handleTap2');
+  },
+
+  handleTap3: function (e) {
+    console.log('handleTap3');
+  },
+
+  handleTap4: function (e) {
+    console.log('handleTap4');
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
