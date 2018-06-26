@@ -1,11 +1,14 @@
 <!--pages/detail/detail.wxml-->
+<import src="../../wxParse/wxParse.wxml"/>
+
 <view wx:if='{{art}}' class='container'>
   <view class='art-header'>
     <image src='{{art.image}}' class='art-img'></image>
     <view class='art-title'>{{art.title}}</view>
     <view class='art-source'>{{art.image_source}}</view>
   </view>
-  
+
+  <template is="wxParse" data="{{wxParseData:detailContent.nodes}}"/>
 </view>
 
 <view wx:else class='art-container'>
