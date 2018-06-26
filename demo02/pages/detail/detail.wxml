@@ -9,5 +9,5 @@
 </view>
 
 <view wx:else class='art-container'>
-    不能识别HTML，内容无法显示。
+  不能识别HTML，内容无法显示。
 </view>

@@ -13,7 +13,6 @@ Page({
    */
   onLoad: function (options) {
     var that = this;
-    console.log(options);
     wx.request({
       url: 'http://news-at.zhihu.com/api/4/news/' + options.id,
       header: {
@@ -23,7 +22,6 @@ Page({
         that.setData({
           art: res.data
         });
-        console.log(res.data);
       }
     })
   },

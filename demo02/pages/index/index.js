@@ -5,15 +5,21 @@ const util = require('../../utils/util.js');
 
 Page({
   data: {
+    // 新闻列表数据
     list: [],
+    // 滑动动画时长
     duration: 2000,
+    // 面板指示点
     indicatorDots: true,
+    // 自动切换
     autoplay: true,
+    // 切换动画时间间隔
     interval: 3000,
     loading: false,
+    // 按钮是否镂空，背景色透明
     plain: false,
   },
-  
+  // 生命周期函数--监听页面加载
   onLoad: function () {
     const that = this;
     wx.request({
@@ -31,6 +37,7 @@ Page({
 
     this.index = 1;
   },
+  // 点击更多的回调
   loadMore: function (e) {
     if (this.data.list.length === 0) {
       return;
@@ -38,7 +45,6 @@ Page({
 
     const date = this.getNextDate();
     const that = this;
-
     that.setData({
       loading: true,
     });
@@ -56,15 +62,18 @@ Page({
       }
     })
   },
+  // 跳转到详情页面
   bindViewTap: function (e) {
     // 打开新页面
     wx.navigateTo({
       url: '../detail/detail?id=' + e.target.dataset.id,
     })
   },
+  // 生成前一天的时间
   getNextDate: function (e) {
     const now = new Date();
-    now.setDate(now.getDate() - this.index++);
+    // now.getDate() 返回某一天的日期
+    now.setDate(now.getDate() - (this.index ++));
     return now;
   }
 })

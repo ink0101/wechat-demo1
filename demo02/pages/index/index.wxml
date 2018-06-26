@@ -1,4 +1,4 @@
-<swiper indicator-dots='{{indicatorDots}}' autoplay='{{autoplay}}' class="banners"
+<swiper class="banners" indicator-dots='{{indicatorDots}}' autoplay='{{autoplay}}' 
     interval='{{interval}}' duration='{{duration}}'>
 
   <block wx:for="{{banner}}" wx:key="{{item.id}}">
