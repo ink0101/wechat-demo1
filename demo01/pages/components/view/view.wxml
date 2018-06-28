@@ -1,0 +1,16 @@
+<!--pages/components/view/view.wxml-->
+<text>row</text>
+
+<view class='row'>
+  <view class='bg-red w100 h100' hover-class="hover">1</view>
+  <view class='bg-yellow w100 h100' hover-class="hover" hover-start-time='500'>2</view>
+  <view class='bg-blue w100 h100' hover-class="hover" hover-stay-time='500'>3</view>
+</view>
+
+<text>column</text>
+
+<view class='column'>
+  <view class='bg-red w100 h100' hover-class="hover">1</view>
+  <view class='bg-yellow w100 h100' hover-class="hover" hover-start-time='500'>2</view>
+  <view class='bg-blue w100 h100' hover-class="hover" hover-stay-time='500'>3</view>
+</view>

@@ -1,5 +1,4 @@
-console.log('page.js');
-// pages/log/log.js
+// pages/components/view/view.js
 Page({
 
   /**

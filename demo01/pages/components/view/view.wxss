@@ -1,0 +1,10 @@
+/* pages/components/view/view.wxss */
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
