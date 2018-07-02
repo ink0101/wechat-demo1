@@ -13,7 +13,9 @@
     "backgroundColor": "#eee",
     "enablePullDownRefresh": true,
     "backgroundColorTop": "#233333",
-    "backgroundColorBottom": "#233333"
+    "backgroundColorBottom": "#233333",
+
+    "onReachBottomDistance": 50
   },
   "tabBar": {
     "color": "#333",
@@ -28,7 +30,7 @@
       },
       {
         "pagePath": "pages/logs/logs",
-        "text": "LOG"
+        "text": "TEST"
       }
     ]
   },
