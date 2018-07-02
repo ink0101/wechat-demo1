@@ -1,0 +1,36 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#378738",
+    "navigationBarTitleText": "demo3",
+    "navigationBarTextStyle":"#fff",
+    "navigationStyle": "default",
+
+    "backgroundTextStyle": "light",
+    "backgroundColor": "#eee",
+    "enablePullDownRefresh": true,
+    "backgroundColorTop": "#233333",
+    "backgroundColorBottom": "#233333"
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#fff",
+    "backgroundColor": "#378738",
+    "borderStyle": "white",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "LOG"
+      }
+    ]
+  },
+  "debug": true
+}
