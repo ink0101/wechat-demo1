@@ -1,0 +1,5 @@
+<!--pages/components/com1/com1.wxml-->
+<view>
+  <slot></slot>
+  <text>这是自定义组件</text>
+</view>

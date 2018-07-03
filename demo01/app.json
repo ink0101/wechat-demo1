@@ -1,7 +1,7 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/components/view/view"
+    "pages/view/view"
   ],
   "window": {
     "backgroundTextStyle": "light",

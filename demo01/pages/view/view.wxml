@@ -14,3 +14,12 @@
   <view class='bg-yellow w100 h100' hover-class="hover" hover-start-time='500'>2</view>
   <view class='bg-blue w100 h100' hover-class="hover" hover-stay-time='500'>3</view>
 </view>
+
+<view>
+  <text>引用自定义组件</text>
+  <view>
+    <com>
+      <view>这里是插入到组件slot中的内容</view>
+    </com> 
+  </view>
+</view>

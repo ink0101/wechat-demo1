@@ -38,7 +38,7 @@
 				{
 					"id": 0,
 					"name": "test",
-					"pathName": "pages/components/view/view",
+					"pathName": "pages/view/view",
 					"query": "",
 					"scene": "1001"
 				}
