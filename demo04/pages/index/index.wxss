@@ -1,21 +1,71 @@
 /**index.wxss**/
-.userinfo {
+.text {
+  color: #fff;
+}
+.search, .current-weather {
+  padding: 20rpx 30rpx;
+ }
+.input-search {
+  color: #fff;
+  border-bottom:1px solid;
+  font-size:0.75rem;
+}
+.current-weather {
+  text-align: center;
+  padding-top: 40rpx;
+}
+.current-weather .city {
+  position: relative;
+  line-height: 1.5rem;
+}
+.current-weather .city .time {
+  position: absolute;
+  right: 0px;
+  font-size: 0.75rem;
+  line-height: 1.5rem;
+}
+.current-weather .temperature {
+  font-size: 150rpx;
+  line-height: 150rpx;
+  padding-top: 80rpx;
+  padding-bottom: 80rpx;
+}
+.current-weather .detail text {
+  display: block;
+  font-size: 0.75rem;
+  margin-bottom: 30rpx;
+}
+.current-weather .detail text.quality {
+  border-radius: 25rpx;
+  display: inline-block;
+  padding: 5rpx 20rpx;
+  background-color:#55b4ef;
+}
+
+.future-weather {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-color: #409fdc;
+  padding: 20rpx 0;
 }
-
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.future-weather view {
+  flex: 1;
 }
-
-.userinfo-nickname {
-  color: #aaa;
+.future-weather text {
+  text-align: center;
+  display: block;
+  font-size: 0.75rem;
+  line-height: 1.5rem;
 }
-
-.usermotto {
-  margin-top: 200px;
+.life-index .item {
+  display: flex;
+}
+.life-index .img {
+  width: 30%;
+}
+.life-index .img image {
+  width: 100rpx;
+  height: 100rpx;
+}
+.life-index .detail {
+  width: 70%;
 }

@@ -1,1 +1,7 @@
 /**app.wxss**/
+.container {
+  background-color: #42a7e9;
+  min-height: 100vh;
+  color: #fff;
+  font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}

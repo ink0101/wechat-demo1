@@ -1,2 +1,51 @@
 <!--index.wxml-->
+<view class="container">
+  <view class="search">
+    <input type="text" class="input-search" placeholder="查询其他城市" placeholder-class="text" disabled="false" maxlength="140" auto-focus="false" focus="false" bindchange="" bindinput="" bindfocus="" bindblur=""></input>
+  </view>
+
+  <view class="current-weather">
+    <view class="city">
+      <text>北京市</text>
+      <text class="time">07-06 13:55 更新</text>
+    </view>
+    <view class="temperature">
+      <text>35°</text>
+    </view>
+    <view class="detail">
+      <text>晴</text>
+      <text class="quality">轻度污染</text>
+    </view>
+  </view>
+
+  <view class="future-weather">
+    <block wx:for="{{arr}}">
+      <view>
+        <text>今天</text>
+        <text>29 ~ 35°C</text>
+        <text>晴</text>
+        <text>微风</text>
+      </view>
+    </block>
+  </view>
+
+  <view class="life-index">
+    <block wx:for="{{arr}}">
+      <view class="item">
+        <view class="img">
+          <image src="../../img/clothing.png" mode="aspectFit" binderror="" bindload=""></image>
+        </view>
+        
+        <view class="detail">
+          <text>穿衣指数 炎热</text>
+          <text>天气炎热，天气炎热天气炎热天气炎热天气炎热天气炎热天气炎热天气炎热</text>
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <view class="footer">
+    footer
+  </view>
+</view>
 
