@@ -1,1 +1,4 @@
-/* pages/components/com1/com1.wxss */
+/* 指定默认样式  */
+:host {
+  color: yellowgreen;
+}

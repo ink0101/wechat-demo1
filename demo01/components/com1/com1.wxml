@@ -1,5 +1,8 @@
 <!--pages/components/com1/com1.wxml-->
 <view>
-  <slot></slot>
-  <text>这是自定义组件</text>
+  <text>这是自定义组件 {{propA}}</text>
+
+  <slot name="first"></slot>
+
+  <slot name="sec"></slot>
 </view>

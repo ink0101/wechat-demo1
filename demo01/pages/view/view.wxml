@@ -18,8 +18,14 @@
 <view>
   <text>引用自定义组件</text>
   <view>
-    <com>
-      <view>这里是插入到组件slot中的内容</view>
+    <com prop-a="{{a}}">
+      <view slot="first">这里是插入到组件 slot 1 中的内容</view>
+
+      <view slot="sec">这里是插入到组件 slot 2 中的内容</view>
     </com> 
   </view>
 </view>
+
+<scroll-view>
+  scroll-view
+</scroll-view>
